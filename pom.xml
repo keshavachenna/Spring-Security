@@ -76,11 +76,14 @@
       <version>1.6.3</version>
       <scope>compile</scope>
     </dependency>
- <dependency>
-    <groupId>org.springframework.security.extensions</groupId>
-    <artifactId>spring-security-saml2-core</artifactId>
-    <version>1.0.0.RELEASE</version>
-</dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.springframework.security.extensions/spring-security-saml2-core -->
+    <dependency>
+        <groupId>org.springframework.security.extensions</groupId>
+        <artifactId>spring-security-saml2-core</artifactId>
+        <version>1.0.2.RELEASE</version>
+    </dependency>
+
     <dependency>
       <groupId>org.springframework.security</groupId>
       <artifactId>spring-security-config</artifactId>
