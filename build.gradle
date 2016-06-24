@@ -1,5 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'war'
+apply plugin: 'tomcat'
+
  
 group = 'com.bazlur.app'
 // artifactId is taken by default, from folder name
@@ -9,8 +12,6 @@ dependencies {
 compile 'commons-lang:commons-lang:2.3'
 }
 
-apply plugin: 'war'
-apply plugin: 'tomcat'
 
 
 // Disable publishing to repository for the sample project
@@ -39,7 +40,7 @@ dependencies {
 
 	testCompile "junit:junit:4.4"
 
-	def tomcatVersion = '7.0.11'
+	def tomcatVersion = '8.0'
 	tomcat "org.apache.tomcat.embed:tomcat-embed-core:${tomcatVersion}",
 		"org.apache.tomcat.embed:tomcat-embed-logging-juli:${tomcatVersion}"
 	tomcat("org.apache.tomcat.embed:tomcat-embed-jasper:${tomcatVersion}") {
